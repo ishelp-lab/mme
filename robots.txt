@@ -1,0 +1,55 @@
+# Content-Signal declara a preferencia de uso do conteudo deste site:
+# search=yes permite indexar e linkar em resultados de busca;
+# ai-input=yes permite usar o conteudo como fonte em respostas geradas por IA;
+# ai-train=yes permite usar o conteudo para treinar ou fazer fine-tuning de modelos de IA.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+User-agent: Googlebot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Disallow: 
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Disallow: 
+Crawl-delay: 1
+
+User-agent: Mediapartners-Google
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 1
+
+User-agent: Adsbot-Google
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+Crawl-delay: 2
+
+Sitemap: https://www.mmemontagem.com.br/sitemap.xml
